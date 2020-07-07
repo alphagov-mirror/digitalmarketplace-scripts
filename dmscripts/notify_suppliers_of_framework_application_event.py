@@ -92,6 +92,7 @@ def notify_suppliers_of_framework_application_event(
                     },
                 )
                 if dry_run:
+                    # Use the sent messages cache unless we're re-running the job following a failure
                     if notify_client.has_been_sent(notify_ref, use_recent_cache=run_is_new):
                         logger.debug(
                             "[DRY RUN] Would NOT send notification to {email_hash} (already sent)",
@@ -104,6 +105,7 @@ def notify_suppliers_of_framework_application_event(
                         )
                 else:
                     try:
+                        # Use the sent messages cache unless we're re-running the job following a failure
                         notify_client.send_email(
                             user["emailAddress"],
                             notify_template_id,
