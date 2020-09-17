@@ -20,9 +20,9 @@ colorama==0.4.3           # via awscli
 contextlib2==0.6.0.post1  # via digitalmarketplace-utils
 cryptography==2.3.1       # via digitalmarketplace-utils
 defusedxml==0.6.0         # via odfpy
-git+https://github.com/alphagov/digitalmarketplace-apiclient.git@21.6.0#egg=digitalmarketplace-apiclient==21.6.0  # via -r requirements.in
-git+https://github.com/alphagov/digitalmarketplace-content-loader.git@7.3.0#egg=digitalmarketplace-content-loader==7.3.0  # via -r requirements.in
-git+https://github.com/alphagov/digitalmarketplace-utils.git@52.7.0#egg=digitalmarketplace-utils==52.7.0  # via -r requirements.in, digitalmarketplace-content-loader
+git+https://github.com/alphagov/digitalmarketplace-apiclient.git@21.9.0#egg=digitalmarketplace-apiclient==21.9.0  # via -r requirements.in
+git+https://github.com/alphagov/digitalmarketplace-content-loader.git@7.21.0#egg=digitalmarketplace-content-loader==7.21.0  # via -r requirements.in
+git+https://github.com/alphagov/digitalmarketplace-utils.git@52.9.0#egg=digitalmarketplace-utils==52.9.0  # via -r requirements.in, digitalmarketplace-content-loader
 docopt==0.6.2             # via -r requirements.in, notifications-python-client
 docutils==0.15.2          # via awscli, botocore
 flask-gzip==0.2           # via digitalmarketplace-utils
@@ -35,7 +35,6 @@ future==0.18.2            # via notifications-python-client
 gds-metrics==0.2.0        # via digitalmarketplace-utils
 govuk-country-register==0.5.0  # via digitalmarketplace-utils
 idna==2.9                 # via cryptography, requests
-importlib-metadata==1.5.0  # via argcomplete, jsonschema
 inflection==0.3.1         # via digitalmarketplace-content-loader
 itsdangerous==1.1.0       # via -r requirements.in, flask, flask-wtf
 jinja2==2.10.3            # via digitalmarketplace-content-loader, flask
@@ -69,7 +68,6 @@ wtforms==2.2.1            # via flask-wtf
 xeger==0.3.5              # via -r requirements.in
 xmltodict==0.12.0         # via yq
 yq==2.11.0                # via -r requirements.in
-zipp==3.0.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
