@@ -15,14 +15,16 @@ QUERY = {
 
 
 def get_organisations():
-    response = requests.request(
-        "GET",
-        f"{BASE_URL}/members/me/organizations",
-        headers=HEADERS,
-        params={"fields ": "name", **QUERY},
-    )
-    response.raise_for_status()
-    return [o["id"] for o in json.loads(response.text)]
+    """
+    All the DMp Trello organisations.
+    """
+    return {
+        "DMP 2": "5e70a808f51fba20f624d9e2",  # pragma: allowlist secret
+        "DMP 3": "5eb0095a4b182882dbb46652",  # pragma: allowlist secret
+        "DMP 4": "5f11bf47fb7c2f529c42193a",  # pragma: allowlist secret
+        "Digital Marketplace - up to May 2019": "56ab94d6239d393aafcc0dd7",  # pragma: allowlist secret
+        "Digital Marketplace Missions": "5cd16b6993f4f0616b48c101",  # pragma: allowlist secret
+    }.values()
 
 
 def get_organisation_boards(organisation_id):
